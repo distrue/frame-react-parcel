@@ -1,5 +1,5 @@
 {
-  "name": "react",
+  "name": "react-parcel",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -26,6 +26,7 @@
     "eslint-plugin-react": "^7.17.0",
     "eslint-plugin-react-hooks": "^2.3.0",
     "parcel": "^1.12.4",
+    "parcel-bundler": "^1.12.4",
     "prettier": "^1.19.1",
     "typescript": "^3.7.4"
   },
@@ -33,11 +34,12 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   },
+  "keywords": [
+    "scaffolding"
+  ],
   "scripts": {
     "dev": "parcel serve -p 2000 ./src/index.html",
     "build": "node ./parcel.config.js",
-    "check-format": "prettier --list-different \"src/**/*.{ts,tsx,css,html,json,md}\" ",
-    "format": "prettier --write \"src/**/*.{ts,tsx,css,html,json,md}\" ",
     "lint": "eslint . --ext .js,.ts,.tsx",
     "type-check": "tsc --skipLibCheck"
   }
